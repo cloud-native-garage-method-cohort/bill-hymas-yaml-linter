@@ -1,0 +1,15 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: hello-world-tekton-task
+spec:
+  params:
+    - name: name
+      type: string
+      default: "World"
+  steps:
+    - name: first-step
+      image: quay.io/ibmgaragecloud/alpine-curl
+      script: |
+        echo 'Hello $(params.name)!'
+        echo 'Script complete'
