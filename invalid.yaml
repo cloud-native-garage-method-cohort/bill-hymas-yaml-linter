@@ -1,4 +1,3 @@
-{
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
@@ -14,4 +13,3 @@ spec:
       script: |
         echo 'Hello $(params.name)!'
         echo 'Script complete'
-}
