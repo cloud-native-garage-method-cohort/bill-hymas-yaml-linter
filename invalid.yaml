@@ -1,7 +1,7 @@
-#apiVersion: tekton.dev/v1beta1
+apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: hello-world-tekton-task
+name: hello-world-tekton-task
 spec:
   params:
     - name: name
